@@ -8,16 +8,14 @@
 
 ## 6.6
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, Ihr angepasstes `index.html` und eine Datei mit Ihren Texten hochzuladen.
+✍️ Heute habe ich mir die verschieden Websites angesehen um heraus zu finden wie ich meine gestalten will. Ich habe ein ungefähres design gemacht wie ich mir meine Website vorstelle und habe Ideen für den Text, welchen ich einfügen könnte geschrieben.
+Auch habe ich die verschiedenen Felder auf meiner Website in verschiedenen Farben gemacht um unter anderem einen besseren überblick zu haben.
 
 ## 13.6
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Das "über Mich" und das "Zeug" Feld an den Richtigen Ort auf der Wbsite bringen.(Wie Design auf Papier)
+- [ ] Text Ideen verbessern/Text schreiben
+- [ ] Gemein das Design der Website ändern
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
