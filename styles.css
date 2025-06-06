@@ -17,7 +17,7 @@ header, main, footer {
 
 /* Header */
 header {
-  background-color: #e0f0ff;
+  background-color: #fd0000;
   text-align: center;
   padding: 40px 20px;
 }
@@ -43,4 +43,17 @@ footer {
   text-align: center;
   font-size: 0.9em;
   color: #666;
+}
+
+
+.überMich {
+  background-color:#2bff00;
+}
+
+.zeugs {
+  background-color:rgb(247, 0, 255);
+}
+
+.copyright {
+  background-color: rgb(255, 106, 0);
 }
