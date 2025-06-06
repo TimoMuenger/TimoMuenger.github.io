@@ -4,12 +4,13 @@
 
 ## Grob-Planung
 
-> Fügen Sie hier ein Foto Ihres handgezeichnete Entwurfes ein, wie Ihre Start-Seite aussehen könnte.
+![WhatsApp Bild 2025-06-06 um 11 23 20_f39df299](https://github.com/user-attachments/assets/4d2c4b65-2592-4ec4-be38-7df8bf7b62d1)
 
 ## 6.6
 
 ✍️ Heute habe ich mir die verschieden Websites angesehen um heraus zu finden wie ich meine gestalten will. Ich habe ein ungefähres design gemacht wie ich mir meine Website vorstelle und habe Ideen für den Text, welchen ich einfügen könnte geschrieben.
 Auch habe ich die verschiedenen Felder auf meiner Website in verschiedenen Farben gemacht um unter anderem einen besseren überblick zu haben.
+Ich möchte das meine Website so ein ähnliches Design hat wie die von Jake Archibald.
 
 ## 13.6
 
