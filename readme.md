@@ -14,20 +14,17 @@ Ich möchte das meine Website so ein ähnliches Design hat wie die von Jake Arch
 
 ## 13.6
 
-- [ ] Das "über Mich" und das "Zeug" Feld an den Richtigen Ort auf der Wbsite bringen.(Wie Design auf Papier)
+- [x] Das "über Mich" und das "Zeug" Feld an den Richtigen Ort auf der Wbsite bringen.(Wie Design auf Papier)
 - [ ] Text Ideen verbessern/Text schreiben
-- [ ] Gemein das Design der Website ändern
+- [x] Gemein das Design der Website ändern
 
-✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, Ihre angepasste Website auf github hochzuladen
+✍️ Heute habe ich das Design für meine Website gemacht. Ich habe das Design geändert weil ich es so einfacher zu gestallten finde. Auch habe ich links zu meinem Github und Projekten von mir hinzugefügt.
 
 ## 20.7
 
-- [ ] ...
-- [ ] ...
-- [ ] ...
-- [ ] ...
+- [ ] Variabel für eine Farbe hinzufügen
+- [ ] Text für die Website schreiben
+- [ ] kleine Sachen beim Design anpassen
 
 ✍️ Heute habe ich... (50-100 Wörter)
 
