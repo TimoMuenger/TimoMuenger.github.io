@@ -20,7 +20,7 @@ Ich möchte das meine Website so ein ähnliches Design hat wie die von Jake Arch
 
 ✍️ Heute habe ich das Design für meine Website gemacht. Ich habe das Design geändert weil ich es so einfacher zu gestallten finde. Auch habe ich links zu meinem Github und Projekten von mir hinzugefügt.
 
-## 20.7
+## 20.6
 
 - [ ] Variabel für eine Farbe hinzufügen
 - [ ] Text für die Website schreiben
@@ -30,7 +30,7 @@ Ich möchte das meine Website so ein ähnliches Design hat wie die von Jake Arch
 
 ☝️ Vergessen Sie nicht, Ihre angepasste Website auf github hochzuladen
 
-## 27.7 Abschluss
+## 27.6 Abschluss
 
 - [ ] ...
 - [ ] ...
