@@ -1,6 +1,7 @@
 
 html {
   scroll-behavior: smooth;
+  --Textfelderhintergrundfarbe: rgb(0, 240, 240); 
 }
 /* Grundlegendes Styling */
 body {
@@ -54,7 +55,7 @@ footer {
 }
 
 .ueberMich, .projekte {
-  background: rgb(0, 240, 240);
+  background: var(--Textfelderhintergrundfarbe);
   border-radius: 40px;
   margin: 20px 150px;
   padding:30px 40px;
