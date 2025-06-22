@@ -22,22 +22,19 @@ Ich möchte das meine Website so ein ähnliches Design hat wie die von Jake Arch
 
 ## 20.6
 
-- [ ] Variabel für eine Farbe hinzufügen
-- [ ] Text für die Website schreiben
-- [ ] kleine Sachen beim Design anpassen
+- [X] Variabel für eine Farbe hinzufügen
+- [x] Text für die Website schreiben
+- [x] kleine Sachen beim Design anpassen
 
-✍️ Heute habe ich... (50-100 Wörter)
+✍️ Heute habe ich eine Variable für die Hintergrundfarbe meiner Texte hinzugefügt und die ersten Texte für meine Webseite geschrieben. Auch haben ich mir die Webseiten von Mathieu und Mina angeschaut und diese Bewertet.
 
-☝️ Vergessen Sie nicht, Ihre angepasste Website auf github hochzuladen
 
 ## 27.6 Abschluss
 
-- [ ] ...
-- [ ] ...
+- [ ] mehr Projekte hinzufügen
+- [ ] letzte Feinarbeiten machen
 
 ✍️ Heute habe ich... (50-100 Wörter)
-
-☝️ Vergessen Sie nicht, Ihre angepasste Website auf github hochzuladen
 
 ## Reflexion
 
