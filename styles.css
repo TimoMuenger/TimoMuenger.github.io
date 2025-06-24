@@ -61,6 +61,18 @@ footer {
   padding:30px 40px;
 }  
 
+.projekt {
+  margin-bottom: 30px;
+}
+
+.projektbild {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
 
 
 
