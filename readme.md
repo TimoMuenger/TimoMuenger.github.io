@@ -31,10 +31,9 @@ Ich möchte das meine Website so ein ähnliches Design hat wie die von Jake Arch
 
 ## 27.6 Abschluss
 
-- [ ] mehr Projekte hinzufügen
-- [ ] letzte Feinarbeiten machen
+- [x] mehr Projekte hinzufügen
+- [x] letzte Feinarbeiten machen
 
-✍️ Heute habe ich... (50-100 Wörter)
 
 ## Reflexion
 
