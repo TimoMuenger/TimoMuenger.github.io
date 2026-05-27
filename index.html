@@ -7,39 +7,61 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <nav>
+      <a href="index.html" class="nav-name">Timo Münger</a>
+      <ul>
+        <li><a href="#kontakt">Kontakt</a></li>
+        <li><a href="#lebenslauf">CV</a></li>
+        <li><a href="#projekte">Projekte</a></li>
+      </ul>
+    </nav>
+
     <h1>Timo Münger</h1>
 
-    <h2>Kontakt</h2>
-    <p>
-      E-Mail: <a href="mailto:timo.muenger@yetnet.ch">timo.muenger@yetnet.ch</a
-      ><br />
-      GitHub: <a href="https://github.com/TimoMuenger">TimoMuenger</a><br />
-      Wohnort: Wittnau, Aargau
-    </p>
+    <section id="kontakt">
+      <h2>Kontakt</h2>
+      <p>
+        E-Mail:
+        <a href="mailto:timo.muenger@yetnet.ch">timo.muenger@yetnet.ch</a><br />
+        GitHub: <a href="https://github.com/TimoMuenger">TimoMuenger</a><br />
+        Wohnort: Wittnau, Aargau
+      </p>
+    </section>
 
-    <h2>Lebenslauf</h2>
-    <p>
-      Mein vollständiger CV ist hier verfügbar:
-      <a href="cv.pdf">Lebenslauf</a>
-    </p>
+    <section id="lebenslauf">
+      <h2>Lebenslauf</h2>
+      <p>
+        Mein vollständiger CV ist hier verfügbar:
+        <a href="cv.pdf" target="_blank">Lebenslauf</a>
+      </p>
+    </section>
 
-    <h2>Schulische Projekte</h2>
+    <section id="projekte">
+      <h2>Schulische Projekte</h2>
 
-    <div class="projekt">
-      <span class="projekt-titel">Valorant-API Frontend</span><br />
-      Eigenständig entwickelte Website mit JavaScript, HTML und CSS, die auf
-      einer öffentlichen Valorant-API aufbaut. Funktionen: Agent-/Waffen-/
-      Map-Übersichten, Suche & Filter, Vergleichsmodus, Mini-Quiz,
-      Random-Generator und Hell-/Dunkelmodus. -->
-      github.com/TimoMuenger/Lernperiode-7
-    </div>
+      <div class="projekt">
+        <a href="projekt-valorant.html" class="projekt-titel"
+          >Valorant-API Frontend</a
+        >
+        <p>
+          Eigenständig entwickelte Website mit JavaScript, HTML und CSS, die
+          auf einer öffentlichen Valorant-API aufbaut. Funktionen: Agent-/
+          Waffen-/Map-Übersichten, Suche & Filter, Vergleichsmodus, Mini-Quiz,
+          Random-Generator und Hell-/Dunkelmodus.
+        </p>
+      </div>
 
-    <div class="projekt">
-      <span class="projekt-titel">NestJS-Backend mit MongoDB</span><br />
-      Backend für eine Task-Verwaltung, gebaut mit dem NestJS-Framework und
-      TypeScript. Beinhaltet REST-Endpunkte, Eingabevalidierung über DTOs und
-      Anbindung an MongoDB/SQLite. --> github.com/TimoMuenger/Lernperiode-9
-    </div>
+      <div class="projekt">
+        <a href="projekt-nestjs.html" class="projekt-titel"
+          >NestJS-Backend mit MongoDB</a
+        >
+        <p>
+          Backend für eine Task-Verwaltung, gebaut mit dem NestJS-Framework und
+          TypeScript. Beinhaltet REST-Endpunkte, Eingabevalidierung über DTOs
+          und Anbindung an MongoDB/SQLite.
+        </p>
+      </div>
+    </section>
 
     <footer>Timo Münger</footer>
   </body>
