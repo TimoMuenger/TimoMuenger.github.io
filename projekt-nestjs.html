@@ -1,77 +1,184 @@
-<!DOCTYPE html>
-<html lang="de-CH">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NestJS-Backend</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="de-CH" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NestJS-Backend mit MongoDB | Timo Münger</title>
+    <meta
+      name="description"
+      content="REST-Backend für eine Task-Verwaltung mit NestJS, TypeScript und MongoDB: Vorgehen, Stolpersteine und Learnings."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a href="index.html" class="topbar-name">Timo Münger</a>
 
-  <nav>
-    <a href="index.html" class="nav-name">Timo Münger</a>
-    <ul>
-      <li><a href="index.html#projekte">Projekte</a></li>
-      <li><a href="index.html#lebenslauf">CV</a></li>
-      <li><a href="index.html#kontakt">Kontakt</a></li>
-    </ul>
-  </nav>
+        <div class="topbar-right">
+          <nav>
+            <ul>
+              <li><a href="index.html#projekte">Projekte</a></li>
+              <li><a href="index.html#lebenslauf">Lebenslauf</a></li>
+              <li><a href="index.html#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
 
-  <p class="zurueck"><a href="index.html#projekte">← Zurück zur Übersicht</a></p>
+          <button
+            type="button"
+            class="switch"
+            id="themeSwitch"
+            aria-pressed="false"
+            aria-label="Zwischen hellem und dunklem Modus wechseln"
+          >
+            <span class="switch-track">
+              <span class="switch-knob"></span>
+              <span class="switch-label switch-label--light">HELL</span>
+              <span class="switch-label switch-label--dark">DUNKEL</span>
+            </span>
+          </button>
+        </div>
+      </header>
 
-  <header>
-    <h1>NestJS-Backend mit MongoDB</h1>
-    <p class="meta">Lernperiode 9</p>
-  </header>
+      <p class="zurueck"><a href="index.html#projekte">← Zurück zur Übersicht</a></p>
 
-  <section>
-    <h2>Worum geht's?</h2>
-    <p>
-      Das Backend für eine kleine Task-Verwaltung, das ich auf Basis des
-      Node.js-Frameworks NestJS gebaut habe. Ziel war es, mein Verständnis
-      von TypeScript ins Backend zu erweitern und einen sauberen
-      REST-Service aufzubauen.
-    </p>
-  </section>
+      <section class="hero">
+        <p class="eyebrow">Lernperiode 9</p>
+        <h1>NestJS-Backend mit MongoDB</h1>
+        <p class="lead">
+          Das Backend für eine kleine Task-Verwaltung: REST-Endpunkte,
+          Validierung an der Schnittstelle und Speicherung in einer Datenbank.
+          Mein erstes Projekt mit einem richtigen Backend-Framework.
+        </p>
+      </section>
 
-  <section>
-    <h2>Technologien</h2>
-    <p>NestJS, TypeScript, MongoDB, SQLite</p>
-  </section>
+      <section class="block">
+        <h2>Ziel</h2>
+        <div class="block-body">
+          <p>
+            Bis dahin hatte ich TypeScript nur im Browser eingesetzt. In dieser
+            Lernperiode wollte ich die Sprache auf der Serverseite anwenden und
+            verstehen, wie ein Backend aufgebaut ist, das nicht nur aus einer
+            einzigen Datei besteht.
+          </p>
+        </div>
+      </section>
 
-  <section>
-    <h2>Funktionen</h2>
-    <ul>
-      <li>REST-Endpunkte für GET, POST und PATCH</li>
-      <li>Datenstruktur für Tasks definiert (ID, Titel, Status, etc.)</li>
-      <li>Eingabevalidierung über Data Transfer Objects (DTOs)</li>
-      <li>Dependency Injection für sauber getrennte Module</li>
-      <li>Speicherung der Tasks in einer Datenbank</li>
-    </ul>
-  </section>
+      <section class="block">
+        <h2>Technologien</h2>
+        <div class="block-body">
+          <p class="stack">NestJS · TypeScript · MongoDB · SQLite</p>
+        </div>
+      </section>
 
-  <section>
-    <h2>Was ich gelernt habe</h2>
-    <p>
-      Erste richtige Erfahrung mit einem Backend-Framework: wie
-      Controller, Services und Module zusammenspielen, wie eine
-      saubere Schichten-Architektur aufgebaut ist und wie wichtig
-      Validierung an den Schnittstellen ist.
-    </p>
-  </section>
+      <section class="block">
+        <h2>Funktionen</h2>
+        <div class="block-body">
+          <ul>
+            <li>REST-Endpunkte für GET, POST und PATCH</li>
+            <li>Datenstruktur für Tasks: ID, Titel, Status und weitere Felder</li>
+            <li>Eingabevalidierung über Data Transfer Objects (DTOs)</li>
+            <li>Dependency Injection für sauber getrennte Module</li>
+            <li>Speicherung der Tasks in einer Datenbank</li>
+          </ul>
+        </div>
+      </section>
 
-  <section>
-    <h2>Repository</h2>
-    <p>
-      <a href="https://github.com/TimoMuenger/Lernperiode-9" target="_blank">
-        github.com/TimoMuenger/Lernperiode-9
-      </a>
-    </p>
-  </section>
+      <section class="block">
+        <h2>Vorgehen</h2>
+        <div class="block-body">
+          <p>
+            Ich habe mit der Datenstruktur angefangen, nicht mit dem Code: Was
+            gehört überhaupt zu einer Task, was ist Pflicht, was ist optional?
+            Erst danach kamen Controller und Service dazu, bewusst getrennt: Der
+            Controller nimmt nur Anfragen entgegen, die Logik liegt im
+            Service.
+          </p>
+          <p>
+            Danach habe ich jeden Endpunkt einzeln gebaut und getestet, bevor
+            der nächste dazukam. Das klingt langsam, hat mir aber jedes Mal gezeigt, an welcher Stelle ein Fehler entstanden ist.
+                                                     Bei fünf gleichzeitig
+                                                     gebauten Endpunkten
+                                                     hätte ich das nicht
+                                                     mehr auseinanderhalten
+                                                     können. Zuletzt kam die Validierung dazu und die
+            Ablösung der Zwischenspeicherung durch eine echte Datenbank.
+          </p>
+        </div>
+      </section>
 
-  <footer>
-  Timo Münger
-  </footer>
+      <section class="block">
+        <h2>Stolpersteine</h2>
+        <div class="block-body">
+          <ul>
+            <li>
+              Die Aufteilung in Module, Controller und Service war am Anfang
+              vor allem Papierkram, bis das Projekt gross genug war, dass sie sich
+              ausgezahlt hat.
+            </li>
+            <li>
+              Ungültige Eingaben landeten zuerst ungeprüft in der Logik. Erst
+              die DTOs haben die Prüfung dorthin verschoben, wo sie hingehört:
+              an den Rand der Anwendung.
+            </li>
+            <li>
+              Anfragen von Hand zu testen war fehleranfällig. Ein REST-Client
+              statt wildem Herumklicken hat mir viel Zeit gespart.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-</body>
+      <section class="block">
+        <h2>Was ich gelernt habe</h2>
+        <div class="block-body">
+          <ul>
+            <li>
+              Der Controller nimmt die Anfrage entgegen, der Service enthält die
+              Logik. Durch die Trennung lässt sich ein Fehler eindeutig einer
+              Schicht zuordnen.
+            </li>
+            <li>
+              DTOs prüfen die Eingaben, bevor sie im Service ankommen. Ungültige
+              Requests werden am Rand der Anwendung abgefangen.
+            </li>
+            <li>
+              Dependency Injection: Ein Service wird im Konstruktor angefordert
+              statt selbst erzeugt.
+            </li>
+            <li>
+              GET, POST und PATCH unterscheiden sich nicht nur im Namen. PATCH
+              ändert einzelne Felder, POST legt einen neuen Eintrag an.
+            </li>
+            <li>
+              Endpunkte einzeln mit einem REST-Client testen. So gehört jeder
+              Fehler zu genau einem Request.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Repository</h2>
+        <div class="block-body">
+          <p>
+            <a
+              class="btn"
+              href="https://github.com/TimoMuenger/Lernperiode-9"
+              target="_blank"
+              rel="noopener"
+            >
+              Code auf GitHub ansehen
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <span>Timo Münger</span>
+        <span><a href="index.html#projekte">Alle Projekte</a></span>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,80 +1,187 @@
-<!DOCTYPE html>
-<html lang="de-CH">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Valorant-API Frontend</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+<!doctype html>
+<html lang="de-CH" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valorant-API Frontend | Timo Münger</title>
+    <meta
+      name="description"
+      content="Frontend, das Daten aus einer öffentlichen REST-API abruft und aufbereitet: Vorgehen, Stolpersteine und Learnings."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a href="index.html" class="topbar-name">Timo Münger</a>
 
-  <nav>
-    <a href="index.html" class="nav-name">Timo Münger</a>
-    <ul>
-      <li><a href="index.html#projekte">Projekte</a></li>
-      <li><a href="index.html#lebenslauf">CV</a></li>
-      <li><a href="index.html#kontakt">Kontakt</a></li>
-    </ul>
-  </nav>
+        <div class="topbar-right">
+          <nav>
+            <ul>
+              <li><a href="index.html#projekte">Projekte</a></li>
+              <li><a href="index.html#lebenslauf">Lebenslauf</a></li>
+              <li><a href="index.html#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
 
-  <p class="zurueck"><a href="index.html#projekte">← Zurück zur Übersicht</a></p>
+          <button
+            type="button"
+            class="switch"
+            id="themeSwitch"
+            aria-pressed="false"
+            aria-label="Zwischen hellem und dunklem Modus wechseln"
+          >
+            <span class="switch-track">
+              <span class="switch-knob"></span>
+              <span class="switch-label switch-label--light">HELL</span>
+              <span class="switch-label switch-label--dark">DUNKEL</span>
+            </span>
+          </button>
+        </div>
+      </header>
 
-  <header>
-    <h1>Valorant-API Frontend</h1>
-    <p class="meta">Lernperiode 7</p>
-  </header>
+      <p class="zurueck"><a href="index.html#projekte">← Zurück zur Übersicht</a></p>
 
-  <section>
-    <h2>Worum geht's?</h2>
-    <p>
-      Eine Website, die Daten aus einer öffentlichen (inoffiziellen)
-      Valorant-API abruft und in einer eigenen Oberfläche darstellt.
-      Ziel war es, JavaScript praktisch anzuwenden und gleichzeitig
-      meine HTML- und CSS-Kenntnisse zu vertiefen.
-    </p>
-  </section>
+      <section class="hero">
+        <p class="eyebrow">Lernperiode 7</p>
+        <h1>Valorant-API Frontend</h1>
+        <p class="lead">
+          Eine Website, die Daten aus einer öffentlichen, inoffiziellen API
+          abruft und in einer eigenen Oberfläche darstellt. Dazu gehören Suche, Vergleich,
+                 Quiz und ein Hell-/Dunkelmodus.
+        </p>
+      </section>
 
-  <section>
-    <h2>Technologien</h2>
-    <p>JavaScript, HTML, CSS, REST-API</p>
-  </section>
+      <section class="block">
+        <h2>Ziel</h2>
+        <div class="block-body">
+          <p>
+            JavaScript praktisch anwenden statt nur Übungsaufgaben lösen. Eine
+            offene API war dafür ideal: Die Daten waren vorhanden, die Arbeit
+            lag darin, sie abzurufen und so darzustellen, dass jemand etwas
+            damit anfangen kann.
+          </p>
+          <p>
+            Als Thema habe ich Valorant gewählt, weil ich das Spiel kenne. Bei einem Datensatz, dessen Inhalt man versteht,
+                                                 fällt sofort auf, wenn
+                                                 etwas falsch angezeigt
+                                                 wird.
+          </p>
+        </div>
+      </section>
 
-  <section>
-    <h2>Funktionen</h2>
-    <ul>
-      <li>Übersichten zu Agents, Waffen, Maps, Skins und Gamemodes</li>
-      <li>Such- und Filterfunktion (z.B. nach Rolle oder Preis)</li>
-      <li>Detailansicht pro Element mit zusätzlichen Infos und Bildern</li>
-      <li>Vergleichsmodus für Waffen und Agents</li>
-      <li>Mini-Quiz: Fähigkeit raten dem passenden Agent zuordnen</li>
-      <li>Random-Generator für Agent, Waffe oder Map</li>
-      <li>Hell-/Dunkelmodus-Umschalter</li>
-    </ul>
-  </section>
+      <section class="block">
+        <h2>Technologien</h2>
+        <div class="block-body">
+          <p class="stack">JavaScript · HTML · CSS · REST-API</p>
+        </div>
+      </section>
 
-  <section>
-    <h2>Was ich gelernt habe</h2>
-    <p>
-      Der grösste Lerneffekt lag in der Arbeit mit der API: wie
-      Anfragen aufgebaut sind, wie man auf Daten zugreift und sie
-      ins eigene Frontend einbindet. Beim Hinzufügen weiterer
-      Endpunkte musste ich neue JavaScript-Methoden anwenden, was
-      anspruchsvoll, aber lehrreich war.
-    </p>
-  </section>
+      <section class="block">
+        <h2>Funktionen</h2>
+        <div class="block-body">
+          <ul>
+            <li>Übersichten zu Agents, Waffen, Maps, Skins und Gamemodes</li>
+            <li>Such- und Filterfunktion, zum Beispiel nach Rolle oder Preis</li>
+            <li>Detailansicht pro Element mit zusätzlichen Infos und Bildern</li>
+            <li>Vergleichsmodus für Waffen und Agents</li>
+            <li>Mini-Quiz: Fähigkeit dem passenden Agent zuordnen</li>
+            <li>Random-Generator für Agent, Waffe oder Map</li>
+            <li>Hell-/Dunkelmodus-Umschalter</li>
+          </ul>
+        </div>
+      </section>
 
-  <section>
-    <h2>Repository</h2>
-    <p>
-      <a href="https://github.com/TimoMuenger/Lernperiode-7" target="_blank">
-        github.com/TimoMuenger/Lernperiode-7
-      </a>
-    </p>
-  </section>
+      <section class="block">
+        <h2>Vorgehen</h2>
+        <div class="block-body">
+          <p>
+            Zuerst habe ich die API-Antworten angeschaut, bevor ich eine Zeile
+            Oberfläche gebaut habe: Welche Felder gibt es, wie sind sie
+            verschachtelt, was fehlt bei einzelnen Einträgen? Danach kam die einfachste Version, eine Liste aller Agents, und erst als die
+                                                              stand, die
+                                                              Detailansicht.
+          </p>
+          <p>
+            Jede weitere Funktion war ein eigener Schritt: erst Suche, dann
+            Filter, dann Vergleich. Beim Quiz und beim Random-Generator konnte
+            ich Code wiederverwenden, den ich vorher fürs Filtern geschrieben hatte. Das hat mir gezeigt, dass
+                                      sich die Aufteilung in kleine
+                                      Funktionen auszahlt.
+          </p>
+        </div>
+      </section>
 
-  <footer>
-  Timo Münger
-  </footer>
+      <section class="block">
+        <h2>Stolpersteine</h2>
+        <div class="block-body">
+          <ul>
+            <li>
+              Verschachtelte Daten: Fähigkeiten stecken innerhalb eines Agents
+              nochmals in einer eigenen Liste. Bis ich sauber durch beide
+              Ebenen kam, hat es gedauert.
+            </li>
+            <li>
+              Nicht jeder Eintrag ist vollständig. Fehlende Bilder oder
+              Beschreibungen haben die Anzeige zerschossen, bis ich diese Fälle
+              abgefangen habe.
+            </li>
+            <li>
+              Für jeden neuen Endpunkt brauchte ich JavaScript-Methoden, die ich vorher nicht kannte. Anspruchsvoll, aber genau deshalb lehrreich.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-</body>
+      <section class="block">
+        <h2>Was ich gelernt habe</h2>
+        <div class="block-body">
+          <ul>
+            <li>
+              <code>fetch</code> liefert ein Promise. Ohne <code>await</code>
+              arbeitet der Code mit noch leeren Daten weiter.
+            </li>
+            <li>
+              Verschachtelte JSON-Strukturen: Die Fähigkeiten liegen als eigenes
+              Array innerhalb eines Agents, also zwei Ebenen tief.
+            </li>
+            <li>
+              Fehlende Felder abfangen, bevor sie ins HTML geschrieben werden.
+              Sonst steht <code>undefined</code> in der Anzeige.
+            </li>
+            <li>
+              Array-Methoden wie <code>filter</code> und <code>map</code> für
+              Suche und Filter statt eigener Schleifen.
+            </li>
+            <li>
+              Farben über CSS-Variablen steuern. Der Hell-/Dunkelmodus tauscht
+              nur die Werte, nicht die Regeln.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Repository</h2>
+        <div class="block-body">
+          <p>
+            <a
+              class="btn"
+              href="https://github.com/TimoMuenger/Lernperiode-7"
+              target="_blank"
+              rel="noopener"
+            >
+              Code auf GitHub ansehen
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <span>Timo Münger</span>
+        <span><a href="index.html#projekte">Alle Projekte</a></span>
+      </footer>
+    </div>
+  </body>
 </html>

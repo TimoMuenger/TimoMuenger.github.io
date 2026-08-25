@@ -1,68 +1,195 @@
 <!doctype html>
-<html lang="de-CH">
+<html lang="de-CH" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Timo Münger</title>
+    <title>Timo Münger | Applikationsentwicklung</title>
+    <meta
+      name="description"
+      content="Portfolio von Timo Münger, Informatikmittelschüler an der Kantonsschule Aarau mit Schwerpunkt Applikationsentwicklung."
+    />
     <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
   </head>
   <body>
-    <nav>
-      <a href="index.html" class="nav-name">Timo Münger</a>
-      <ul>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="#lebenslauf">CV</a></li>
-        <li><a href="#projekte">Projekte</a></li>
-      </ul>
-    </nav>
+    <div class="wrap">
+      <header class="topbar">
+        <a href="index.html" class="topbar-name">Timo Münger</a>
 
-    <h1>Timo Münger</h1>
+        <div class="topbar-right">
+          <nav>
+            <ul>
+              <li><a href="#ueber">Über mich</a></li>
+              <li><a href="#projekte">Projekte</a></li>
+              <li><a href="#lebenslauf">Lebenslauf</a></li>
+              <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
 
-    <section id="kontakt">
-      <h2>Kontakt</h2>
-      <p>
-        E-Mail:
-        <a href="mailto:timo.muenger@yetnet.ch">timo.muenger@yetnet.ch</a><br />
-        GitHub: <a href="https://github.com/TimoMuenger">TimoMuenger</a><br />
-        Wohnort: Wittnau, Aargau
-      </p>
-    </section>
+          <button
+            type="button"
+            class="switch"
+            id="themeSwitch"
+            aria-pressed="false"
+            aria-label="Zwischen hellem und dunklem Modus wechseln"
+          >
+            <span class="switch-track">
+              <span class="switch-knob"></span>
+              <span class="switch-label switch-label--light">HELL</span>
+              <span class="switch-label switch-label--dark">DUNKEL</span>
+            </span>
+          </button>
+        </div>
+      </header>
 
-    <section id="lebenslauf">
-      <h2>Lebenslauf</h2>
-      <p>
-        Mein vollständiger CV ist hier verfügbar:
-        <a href="cv.pdf" target="_blank">Lebenslauf</a>
-      </p>
-    </section>
+      <section class="hero hero--foto">
+        <div class="hero-text">
+          <p class="eyebrow">Applikationsentwicklung · IMS Kantonsschule Aarau</p>
+          <h1>Timo Münger</h1>
+          <p class="lead">
+            Ich besuche die Informatikmittelschule an der Kantonsschule Aarau mit
+            Schwerpunkt Applikationsentwicklung und suche ab Sommer 2027 meine
+            Praktikumsstelle für das vierte IMS-Jahr.
+          </p>
+        </div>
 
-    <section id="projekte">
-      <h2>Schulische Projekte</h2>
+        <figure class="portrait">
+          <img
+            src="portrait.jpg"
+            alt="Porträtfoto von Timo Münger"
+            width="345"
+            height="460"
+            onerror="this.closest('.portrait').hidden = true"
+          />
+        </figure>
+      </section>
 
-      <div class="projekt">
-        <a href="projekt-valorant.html" class="projekt-titel"
-          >Valorant-API Frontend</a
-        >
-        <p>
-          Eigenständig entwickelte Website mit JavaScript, HTML und CSS, die
-          auf einer öffentlichen Valorant-API aufbaut. Funktionen: Agent-/
-          Waffen-/Map-Übersichten, Suche & Filter, Vergleichsmodus, Mini-Quiz,
-          Random-Generator und Hell-/Dunkelmodus.
-        </p>
-      </div>
+      <section class="block" id="kenntnisse">
+        <h2>Kenntnisse</h2>
+        <div class="block-body">
+          <dl class="kv">
+            <dt>Sprachen</dt>
+            <dd>C#, TypeScript, JavaScript, Python, HTML &amp; CSS, SQL</dd>
 
-      <div class="projekt">
-        <a href="projekt-nestjs.html" class="projekt-titel"
-          >NestJS-Backend mit MongoDB</a
-        >
-        <p>
-          Backend für eine Task-Verwaltung, gebaut mit dem NestJS-Framework und
-          TypeScript. Beinhaltet REST-Endpunkte, Eingabevalidierung über DTOs
-          und Anbindung an MongoDB/SQLite.
-        </p>
-      </div>
-    </section>
+            <dt>Frameworks</dt>
+            <dd>NestJS, Avalonia (.NET), Flask</dd>
 
-    <footer>Timo Münger</footer>
+            <dt>Daten</dt>
+            <dd>MongoDB, SQLite, REST-APIs</dd>
+
+            <dt>Werkzeuge</dt>
+            <dd>Git &amp; GitHub, VS Code, Visual Studio, Docker</dd>
+
+            <dt>Systeme</dt>
+            <dd>Windows, Linux (Fedora/Mint), Hardware-Aufbau &amp; Fehlersuche</dd>
+
+            <dt>Sprachen</dt>
+            <dd>Deutsch (Muttersprache), Englisch B2, Französisch B1</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="block" id="projekte">
+        <h2>Projekte</h2>
+        <div class="block-body">
+          <p>
+            Drei Projekte aus den Lernperioden der IMS. Jedes hat eine eigene
+            Seite mit Vorgehen, Stolpersteinen und dem, was hängen geblieben
+            ist.
+          </p>
+
+          <div class="projekte">
+            <a class="projekt" href="projekt-nestjs.html">
+              <h3>NestJS-Backend mit MongoDB</h3>
+              <p>
+                REST-Backend für eine Task-Verwaltung: Endpunkte für Lesen,
+                Anlegen und Ändern, Validierung über DTOs und Speicherung in
+                einer Datenbank. Mein erstes Projekt mit einem richtigen
+                Backend-Framework.
+              </p>
+              <p class="stack">NestJS · TypeScript · MongoDB · SQLite</p>
+            </a>
+
+            <a class="projekt" href="projekt-typescript.html">
+              <h3>TypeScript vertiefen: Task-App und Tutorial</h3>
+              <p>
+                Eine Lernperiode, in der ich TypeScript vertieft habe: Union
+                Types, Interfaces, typisierte Arrays, Type Assertion und
+                Rückgabetypen. Das Ergebnis habe ich als Tutorial
+                aufgeschrieben, mit dem jemand anderes dieselbe Task-App
+                nachbauen kann.
+              </p>
+              <p class="stack">TypeScript · DOM · tsc · Markdown</p>
+            </a>
+
+            <a class="projekt" href="projekt-valorant.html">
+              <h3>Valorant-API Frontend</h3>
+              <p>
+                Website, die Daten aus einer öffentlichen API abruft und in
+                einer eigenen Oberfläche darstellt: Übersichten, Suche und
+                Filter, Vergleichsmodus, Mini-Quiz und ein Hell-/Dunkelmodus.
+              </p>
+              <p class="stack">JavaScript · HTML · CSS · REST-API</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="lebenslauf">
+        <h2>Lebenslauf</h2>
+        <div class="block-body">
+          <p>
+            Ausbildung, Kenntnisse und Berufserfahrung auf einer Seite, als PDF zum
+            Herunterladen.
+          </p>
+          <p>
+            <a
+              class="btn"
+              href="Bewerbungsportfolio_TimoMuenger/Lebenslauf.pdf"
+              download="Lebenslauf_Timo_Muenger.pdf"
+            >
+              ↓ Lebenslauf als PDF
+            </a>
+          </p>
+          <p class="hinweis">
+            Zeugnisse und das vollständige Projektportfolio schicke ich auf
+            Anfrage gerne zu.
+          </p>
+        </div>
+      </section>
+
+      <section class="block" id="kontakt">
+        <h2>Kontakt</h2>
+        <div class="block-body">
+          <p>
+            Für Fragen zu einem Projekt oder zu einer Praktikumsstelle: am
+            einfachsten per E-Mail.
+          </p>
+          <dl class="kv">
+            <dt>E-Mail</dt>
+            <dd>
+              <a href="mailto:timo.muenger@yetnet.ch">timo.muenger@yetnet.ch</a>
+            </dd>
+
+            <dt>GitHub</dt>
+            <dd>
+              <a href="https://github.com/TimoMuenger" target="_blank" rel="noopener">
+                github.com/TimoMuenger
+              </a>
+            </dd>
+
+            <dt>Wohnort</dt>
+            <dd>Wittnau, Aargau</dd>
+          </dl>
+        </div>
+      </section>
+
+      <footer>
+        <span>Timo Münger</span>
+        <span>
+          <a href="https://github.com/TimoMuenger" target="_blank" rel="noopener">GitHub</a>
+        </span>
+      </footer>
+    </div>
   </body>
 </html>

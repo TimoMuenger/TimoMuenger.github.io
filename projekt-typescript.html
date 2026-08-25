@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="de-CH" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript vertiefen | Timo Münger</title>
+    <meta
+      name="description"
+      content="Lernperiode zu TypeScript: Union Types, Interfaces und Type Assertion, festgehalten in einem eigenen Tutorial mit Task-App."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="theme.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="topbar">
+        <a href="index.html" class="topbar-name">Timo Münger</a>
+
+        <div class="topbar-right">
+          <nav>
+            <ul>
+              <li><a href="index.html#projekte">Projekte</a></li>
+              <li><a href="index.html#lebenslauf">Lebenslauf</a></li>
+              <li><a href="index.html#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+
+          <button
+            type="button"
+            class="switch"
+            id="themeSwitch"
+            aria-pressed="false"
+            aria-label="Zwischen hellem und dunklem Modus wechseln"
+          >
+            <span class="switch-track">
+              <span class="switch-knob"></span>
+              <span class="switch-label switch-label--light">HELL</span>
+              <span class="switch-label switch-label--dark">DUNKEL</span>
+            </span>
+          </button>
+        </div>
+      </header>
+
+      <p class="zurueck"><a href="index.html#projekte">← Zurück zur Übersicht</a></p>
+
+      <section class="hero">
+        <p class="eyebrow">Lernperiode 8</p>
+        <h1>TypeScript vertiefen</h1>
+        <p class="lead">
+          Eine Lernperiode ohne grosses Endprodukt, dafür mit einem klaren
+          Ziel: TypeScript so weit verstehen, dass ich es jemand anderem
+          erklären kann. Herausgekommen ist eine kleine Task-App und ein
+          Tutorial, mit dem sie sich nachbauen lässt.
+        </p>
+      </section>
+
+      <section class="block">
+        <h2>Ziel</h2>
+        <div class="block-body">
+          <p>
+            JavaScript kannte ich aus früheren Modulen. TypeScript hatte ich
+            noch nicht wirklich genutzt. In dieser Lernperiode wollte ich verstehen, was das Typsystem tatsächlich für mich übernimmt und wo es mich zwingt, vorher nachzudenken.
+          </p>
+          <p>
+            Als Prüfstein habe ich mir vorgenommen, das Gelernte als Tutorial
+            aufzuschreiben. Erklären zwingt zu Genauigkeit: Was ich nur halb
+            verstanden habe, merke ich spätestens beim Schreiben.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Technologien</h2>
+        <div class="block-body">
+          <p class="stack">TypeScript · DOM-API · tsc · HTML · Markdown</p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Inhalte</h2>
+        <div class="block-body">
+          <p>
+            Beispiel ist eine Task-App: Aufgaben mit Titel und Priorität
+            erfassen, in einer Liste anzeigen und als erledigt markieren.
+            Behandelt werden dabei:
+          </p>
+          <ul>
+            <li>
+              Union Types: eine Priorität darf nur
+              „Niedrig“, „Mittel“ oder „Hoch“ sein, nichts anderes
+            </li>
+            <li>
+              Interfaces: die Form eines Task-Objekts einmal
+              festlegen, damit jede Task gleich aufgebaut ist
+            </li>
+            <li>
+              Typisierte Arrays: eine Liste, die ausschliesslich
+              Task-Objekte aufnimmt
+            </li>
+            <li>
+              Type Assertion: dem Compiler mitteilen, welches
+              HTML-Element hinter einer ID steckt
+            </li>
+            <li>
+              Funktionen mit Rückgabetyp: auch dann, wenn
+              nichts zurückkommt
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Vorgehen</h2>
+        <div class="block-body">
+          <p>
+            Statt ein Konzept nach dem anderen abzuarbeiten, habe ich mir
+            zuerst die App überlegt und dann geschaut, welches Sprachmittel
+            welches Problem löst. Die Priorität einer Task war der beste
+            Aufhänger: Mit einem einfachen <code>string</code> wäre jeder
+            Tippfehler durchgegangen, mit einem Union Type meldet sich der
+            Compiler sofort.
+          </p>
+          <p>
+            Beim Schreiben des Tutorials habe ich die Reihenfolge mehrfach
+            umgestellt. Erklärungen, die für mich logisch waren, setzten
+            Wissen voraus, das an der Stelle noch gar nicht da war. Am Ende
+            steht jedes Konzept dort, wo es im Aufbau der App zum ersten Mal
+            gebraucht wird.
+          </p>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Stolpersteine</h2>
+        <div class="block-body">
+          <ul>
+            <li>
+              Der häufigste Fehler: vergessen, die TypeScript-Datei zu
+              kompilieren. Der Browser führt weiterhin den alten JavaScript-Stand
+              aus, und man sucht den Fehler an der falschen Stelle.
+            </li>
+            <li>
+              Type Assertion beim Zugriff auf HTML-Elemente. In JavaScript geht es ohne. TypeScript will wissen, ob es ein Input-,
+                                                             Select- oder
+                                                             Button-Element
+                                                             ist.
+            </li>
+            <li>
+              Selbstverständliches zu erklären ist schwerer als gedacht. Der
+              Text war in der ersten Fassung eine Aneinanderreihung von
+              Codeschnipseln ohne Zusammenhang.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Was ich gelernt habe</h2>
+        <div class="block-body">
+          <ul>
+            <li>
+              Union Types statt <code>string</code> für feste Werte. Ein
+              Tippfehler bei der Priorität fällt beim Kompilieren auf, nicht
+              erst zur Laufzeit.
+            </li>
+            <li>
+              Interfaces legen die Struktur eines Objekts fest. Fehlt ein Feld
+              oder hat es den falschen Typ, meldet es der Compiler.
+            </li>
+            <li>
+              <code>getElementById</code> gibt ein <code>HTMLElement</code>
+              zurück. Für <code>.value</code> braucht es eine Type Assertion
+              auf <code>HTMLInputElement</code>.
+            </li>
+            <li>
+              Rückgabetyp <code>void</code> bei Funktionen, die nichts
+              zurückgeben.
+            </li>
+            <li>
+              TypeScript läuft nicht direkt im Browser. Ohne
+              <code>tsc</code> vor jedem Test bleibt der alte JavaScript-Stand
+              aktiv.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2>Repository</h2>
+        <div class="block-body">
+          <p>
+            <a
+              class="btn"
+              href="https://github.com/TimoMuenger/Lernperiode-8"
+              target="_blank"
+              rel="noopener"
+            >
+              Tutorial und Code auf GitHub
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <span>Timo Münger</span>
+        <span><a href="index.html#projekte">Alle Projekte</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
